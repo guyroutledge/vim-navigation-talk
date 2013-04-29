@@ -42,11 +42,13 @@ $color-brand:#f5a180;
 		margin:0 auto;
 	}
 
+	li { font-size:0.8em; }
+
 	section img { border:1px solid #ccc; }
 
 	.warning { color:#c30; }
 
-	ul { list-style:none; }
+	.plugin-features .column-left { text-align:left; }
 
 }
 

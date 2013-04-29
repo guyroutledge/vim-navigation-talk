@@ -91,16 +91,126 @@ Transposition:     cost → cots
 				<section>
 					<section>
 						<h1>Peepopen</h1>
+						<p><a href="https://peepcode.com/products/peepopen">https://peepcode.com/products/peepopen</a></p>
+					</section>
+					<section>
+						<h2>What is it?</h2>
+						<p>A Mac app that hooks into your text editor</p>
+						<p>Supports MacVim, Xcode, Textmate, Coda, Emacs</p>
+						<p>GUI interface for searching and opening files</p>
+					</section>
+					<section class="plugin-features">
+						<h2>What does it do?</h2>
+						<div class="column-left">
+							<p>Fuzzy search</p>
+							<p>Opens files in new tab/current window</p>
+							<p>Displays SCM metadata</p>
+						</div>
+						<img class="column-right" src="img/peepopen-open-file.png" alt="peeopoen screenshot">
+					</section>
+					<section>
+						<h2>Commands</h2>
+						<pre><code>Launch peepopen:     &lt;leader&gt;p
+Next item:           &lt;Up&gt;
+Previous item:       &lt;Down&gt;
+Open file:           &lt;CR&gt;
+Close peepopen:      &lt;ESC&gt;
+</code></pre>
+					</section>
+					<section>
+						<h2>Live Demo</h2>
+					</section>
+					<section>
+						<h2>Peepopen</h2>
+						<div class="column-left">
+							<h3>Pros</h3>
+							<p>Easy install</p>
+							<p>Nice design</p>
+							<p>Smart sorting</p>
+							<p>Shows SCM metadata</p>
+						</div>
+						<div class="column-right">
+							<h3>Cons</h3>
+							<p>Limited options</p>
+							<p>Navigation with arrow keys</p>
+							<p>Costs cash money</p>
+						</div>
 					</section>
 				</section>
 				<section>
 					<section>
 						<h1>CommandT</h1>
+						<p><a href="https://github.com/wincent/Command-T">https://github.com/wincent/Command-T</a></p>
 					</section>
-				</section>
-				<section>
 					<section>
-						<h1>CtrlP</h1>
+						<h2>What is it?</h2>
+						<p>A Vim plugin written in Ruby and C</p>
+						<p>Inspired by the "Goto File" feature of Textmate</p>
+					</section>
+					<section class="plugin-features">
+						<h2>What does it do?</h2>
+						<div class="column-left">
+							<p>Fuzzy search of folders</p>
+							<p>Fuzzy search of open buffers</p>
+							<p>Opens files in:</p>
+							<ul>
+								<li>Current window</li>
+								<li>New tab</li>
+								<li>In a split window</li>
+								<li>In a vertical split</li>
+							</ul>
+						</div>
+						<img class="column-right" src="img/command-t.png" alt="commandT screenshot">
+					</section>
+					<section>
+						<h2>Commands</h2>
+						<pre><code>Launch CommandT:          &lt;leader&gt;t
+Launch CommandT:          :CommandT
+
+Launch buffer search:     &lt;leader&gt;b
+Launch buffer search:     :CommandTBuffer
+
+Next item:                &lt;C-j&gt;
+Previous item:            &lt;C-k&gt;
+Open file:                &lt;CR&gt;
+Open in split:            &lt;C-s&gt;
+Open in Vsplit:           &lt;C-v&gt;
+Open in Tab:              &lt;C-t&gt;
+Close CommandT:           &lt;ESC&gt;
+</code></pre>
+						<p>&nbsp;</p>
+						<p>There are multiple mappings for movement and closing</p>
+					</section>
+					<section>
+						<h2>Configuration</h2>
+						<p>If you use EasyMotion, you'll want to remap CommandT</p>
+						<p>There are lots of configurable options too</p>
+						<p>I have these lines in my <code>.vimrc</code></p>
+						<p>&nbsp;</p>
+						<pre><code>nnoremap &lt;silent&gt; &lt;C-e&gt; :CommandT&lt;CR&gt;
+nnoremap &lt;silent&gt; &lt;C-b&gt; :CommandTBuffer&lt;CR&gt;
+let g:CommandTMaxHeight=25
+let g:CommandTMatchWindowReverse=1
+</code></pre>
+						<aside class="notes">
+							<p>You can set a variety of options including sort order, limits to depth and number of files, the position of the list, the height of the file list, the colour of the highlight and many more.</p>
+						</aside>
+					</section>
+					<section>
+						<h2>Live Demo</h2>
+					</section>
+					<section>
+						<h2>CommandT</h2>
+						<div class="column-left">
+							<h3>Pros</h3>
+							<p>Fast</p>
+							<p>Customisable</p>
+							<p>Accurate results</p>
+						</div>
+						<div class="column-right">
+							<h3>Cons</h3>
+							<p>Installation was fiddly</p>
+						</div>
 					</section>
 				</section>
 				<section>

@@ -3,6 +3,7 @@
 //**************************
 
 @import "compass";
+$color-brand:#f5a180;
 
 .reveal {
 	a:not(.image) { color:darken($color-brand, 5%); }
@@ -43,10 +44,9 @@
 
 	section img { border:1px solid #ccc; }
 
-	li { font-size:0.8em; }
-
 	.warning { color:#c30; }
 
+	ul { list-style:none; }
 
 }
 

@@ -1,22 +1,2 @@
-// Partials are found in the scss directory
-// Partials are prefixed with an underscore
-// eg. scss/_variables.scss
-
-// Partials are imported into screen.scss
-// with the syntax below and compiled into
-// css/screen.css
-
-@import "variables";
-@import "nesting";
-@import "mixins";
-@import "extends";
-@import "color-functions";
-@import "conditionals";
-@import "loops";
-@import "functions";
-@import "compass";
-@import "compass-mixins";
-@import "sprites";
-
 // Custom styles for slides
 @import "slides";

@@ -1,0 +1,52 @@
+//*************************
+// $$ Custom Styles for Slides
+//**************************
+
+@import "compass";
+
+.reveal {
+	a:not(.image) { color:darken($color-brand, 5%); }
+	.roll span:after { background:darken($color-brand, 10%); }
+
+	hgroup .small { font-size:0.5em; }
+
+	.column-left,
+	.column-right {
+		width:49%;
+	}
+	.column-left { float:left; }
+	.column-right { float:right; }
+
+	pre code { padding:20px; }
+
+	.helper-apps {
+		position:relative;
+		height:600px;
+	}
+	.app {
+		position:absolute;
+		a { font-size:0.5em; }
+		img { margin:0 0 -0.5em; border:0; }
+	}
+	.app:nth-child(2) { top:350px; left:90px; }
+	.app:nth-child(3) { top:480px; left:300px; }
+	.app:nth-child(4) { top:300px; right:90px; }
+	.app:nth-child(5) { top:170px; left:400px; }
+	.app:nth-child(6) { top:130px; left:150px; }
+	.app:nth-child(7) { top:440px; right:120px; }
+
+	.code-centered {
+		display:inline-block;
+		width:auto;
+		margin:0 auto;
+	}
+
+	section img { border:1px solid #ccc; }
+
+	li { font-size:0.8em; }
+
+	.warning { color:#c30; }
+
+
+}
+

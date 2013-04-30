@@ -18,7 +18,11 @@ $color-brand:#f5a180;
 	.column-left { float:left; }
 	.column-right { float:right; }
 
-	pre code { padding:20px; }
+	pre { width:100%; }
+	pre code {
+		font-size:1.2em;
+		line-height:1.1em;
+		padding:20px; }
 
 	.helper-apps {
 		position:relative;

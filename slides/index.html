@@ -52,10 +52,18 @@
 				</section>
 				<section>
 					<section>
-						<h2>File Switching</h2>
+						<hgroup>
+							<h4>The Problem:</h4>
+							<h2>File Switching</h2>
+						</hgroup>
 						<p>&nbsp;</p>
 						<p class="fragment roll-in">Working with a codebase, this is something you do a LOT.</p>
 						<p class="fragment roll-in">Anything you do a lot, you want to do FAST.</p>
+					</section>
+					<section>
+						<h2>What's the fastest way?</h2>
+						<p>Remembering every file name or path is a waste of time</p>
+						<p>Searching is the quickest way to find what you're looking for</p>
 					</section>
 					<section>
 						<h2>Fuzzy Search</h2>
@@ -79,7 +87,7 @@ Transposition:     cost → cots
 						<h2>What does this mean?</h2>
 						<p>You can switch files at the speed of thought</p>
 						<p>You don't even need to remember the path or filename</p>
-						<p>Sometimes just a file extension could be enough!</p>
+						<p>Sometimes just a file extension could be enough...</p>
 					</section>
 					<section>
 						<h2>What can you show me?</h2>
@@ -123,6 +131,7 @@ Close peepopen:      &lt;ESC&gt;
 					<section>
 						<h2>Peepopen</h2>
 						<div class="column-left">
+							<img src="img/pro.png" alt="thumbs up">
 							<h3>Pros</h3>
 							<p>Easy install</p>
 							<p>Nice design</p>
@@ -130,6 +139,7 @@ Close peepopen:      &lt;ESC&gt;
 							<p>Shows SCM metadata</p>
 						</div>
 						<div class="column-right">
+							<img src="img/con.png" alt="thumbs down">
 							<h3>Cons</h3>
 							<p>Limited options</p>
 							<p>Navigation with arrow keys</p>
@@ -193,7 +203,11 @@ let g:CommandTMaxHeight=25
 let g:CommandTMatchWindowReverse=1
 </code></pre>
 						<aside class="notes">
-							<p>You can set a variety of options including sort order, limits to depth and number of files, the position of the list, the height of the file list, the colour of the highlight and many more.</p>
+							<p>You can set a variety of options
+							including sort order, limits to depth and
+							number of files, the position of the list,
+							the height of the file list, the colour of
+							the highlight and many more.</p>
 						</aside>
 					</section>
 					<section>
@@ -202,14 +216,103 @@ let g:CommandTMatchWindowReverse=1
 					<section>
 						<h2>CommandT</h2>
 						<div class="column-left">
+							<img src="img/pro.png" alt="thumbs up">
 							<h3>Pros</h3>
 							<p>Fast</p>
 							<p>Customisable</p>
 							<p>Accurate results</p>
 						</div>
 						<div class="column-right">
+							<img src="img/con.png" alt="thumbs down">
 							<h3>Cons</h3>
 							<p>Installation was fiddly</p>
+						</div>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>CtrlP</h1>
+						<p><a href="https://github.com/kien/ctrlp.vim">https://github.com/kien/ctrlp.vim</a></p>
+					</section>
+					<section>
+						<h2>What is it?</h2>
+						<p>A pure vimscript fuzzy finder</p>
+					</section>
+					<section class="plugin-features">
+						<h2>What does it do?</h2>
+						<div class="column-left">
+							<p>Fuzzy search of files</p>
+							<p>Fuzzy search of open buffers</p>
+							<p>Fuzzy search of MRU files</p>
+							<p>Fuzzy search of tags</p>
+							<p>Opens multiple files</p>
+							<p>Regex mode</p>
+							<p>Run commands after opening</p>
+							<p>Opens files in:</p>
+							<ul>
+								<li>Current window</li>
+								<li>New tab</li>
+								<li>In a split window</li>
+								<li>In a vertical split</li>
+							</ul>
+						</div>
+						<img class="column-right" src="img/ctrl-p.png" alt="ctrlP screenshot">
+					</section>
+					<section>
+						<h2>Commands</h2>
+						<pre><code>Launch CtrlP:             :CtrlP
+Launch buffer search:     :CtrlPBuffer
+Launch MRU search:        :CtrlPMRU
+
+Cycle modes:              &lt;C-b&gt; and &lt;C-f&gt;
+Next item:                &lt;C-j&gt;
+Previous item:            &lt;C-k&gt;
+Open file:                &lt;CR&gt;
+Open in split:            &lt;C-x&gt;
+Open in Vsplit:           &lt;C-v&gt;
+Open in Tab:              &lt;C-t&gt;
+Mark multiple files:      &lt;C-z&gt; and open with &lt;C-o&gt;
+Create new file:          &lt;C-y&gt; also creates parent directories
+Close CtrlP:              &lt;ESC&gt;
+</code></pre>
+						<p>&nbsp;</p>
+						<p>You can end the input with a colon to execute commands - such as open a file at a certain line number</p>
+					</section>
+					<section>
+						<h2>Configuration</h2>
+						<pre><code>let g:ctrlp_map = '&lt;C-p&gt;'
+let g:ctrlp_cmd = 'CtrlP'
+
+let g:ctrlp_working_path_mode = 'ra'
+</code></pre>
+						<p>For more detailed information about setting the smart project root finder, check out the <a href="https://github.com/kien/ctrlp.vim">readme on github</a></p>
+					</section>
+					<section>
+						<h2>Extend</h2>
+						<p>A small handful of plugins have been written for CtrlP</p>
+						<p><img src="img/ctrl-p-funky.png" alt="screenshot of ctrl-p funky"></p>
+						<p>Search for function definitions without needing <code>ctags</code></p>
+					</section>
+					<section>
+						<h2>Live Demo</h2>
+					</section>
+					<section>
+						<h2>CtrlP</h2>
+						<div class="column-left">
+							<img src="img/pro.png" alt="thumbs up">
+							<h3>Pros</h3>
+							<p>Easy install</p>
+							<p>Pure vimscript</p>
+							<p>Multiple search modes</p>
+							<p>Regex support</p>
+							<p>Multiple file opening</p>
+						</div>
+						<div class="column-right">
+							<img src="img/con.png" alt="thumbs down">
+							<h3>Cons</h3>
+							<p>Slower than CommandT</p>
+							<p>Hit and miss accuracy</p>
+							<p>Too many features?</p>
 						</div>
 					</section>
 				</section>
@@ -219,7 +322,42 @@ let g:CommandTMatchWindowReverse=1
 							<h3>Bonus Feature:</h3>
 							<h1>Lusty Explorer</h1>
 						</hgroup>
+						<p><a href="https://github.com/sjbach/lusty">https://github.com/sjbach/lusty</a></p>
 					</section>
+					<section>
+						<h2>What is it?</h2>
+						<p>A different take on fuzzy searching and file switching</p>
+						<p>More of a browser, less emphasis on speed</p>
+					</section>
+					<section>
+						<h2>Commands</h2>
+						<pre><code>&lt;Leader&gt;lf       Opens file explorer
+&lt;Leader&gt;lr       Opens file explorer at the dir of current file
+&lt;Leader&gt;lb       Opens buffer explorer
+&lt;Leader&gt;lg       Opens buffer grep
+</code></pre>
+					</section>
+					<section>
+						<h2>Live Demo</h2>
+					</section>
+					<section>
+						<h2>Lusty Explorer</h2>
+						<div class="column-left">
+							<img src="img/pro.png" alt="thumbs up">
+							<h3>Pros</h3>
+							<p>Easily browse your files, buffers and folders</p>
+							<p>Buffer grep is very cool</p>
+						</div>
+						<div class="column-right">
+							<img src="img/con.png" alt="thumbs down">
+							<h3>Cons</h3>
+							<p>Slower file switching</p>
+							<p>Opens files in current window</p>
+						</div>
+					</section>
+				</section>
+				<section>
+					<h2>Conclusions?</h2>
 				</section>
 				<section>
 					<h2>Got any questions?</h2>
@@ -228,7 +366,6 @@ let g:CommandTMatchWindowReverse=1
 					<p>&nbsp;</p>
 					<p><small>Slides: <br><a href="https://talks.guyroutledge.co.uk/switching-files/slides/">https://talks.guyroutledge.co.uk/switching-files/slides/</a></small></p>
 				</section>
-
 			</div>
 
 		</div>
